@@ -13,7 +13,7 @@
 
 Problem: Compute the factorial of an integer n
 
-#### Iterative definition:
+Iterative definition:
 
 ```
 factorial(n) = n * (n - 1) * (n - 2) * ... * 1
@@ -21,7 +21,9 @@ factorial(n) = n * (n - 1) * (n - 2) * ... * 1
 
 factorial(0) = 1
 ```
-#### Iterative solution:
+
+Iterative solution:
+
 ```
 public int factorial(int x){
     int result = 1;
@@ -29,13 +31,13 @@ public int factorial(int x){
     return result;
 }
 ```
-#### Recurrence relation:
+Recurrence relation:
 
 ```
 factorial(n) = n * factorial(n - 1)
 
 ```
-#### Recursive solution
+Recursive solution:
 
 ```
 public int factorial(int x){
@@ -48,7 +50,7 @@ public int factorial(int x){
 
 Problem: Write a string of characters in reverse order
 
-#### Iterative definition
+Iterative definition:
 
 ```
 writeBackwards(s) = s.lastChar + s.secondLastChar + ... + s.firstChar + ""
@@ -57,7 +59,7 @@ writeBackwards("") = "\0" // null terminator
 
 ```
 
-#### Iterative solution
+Iterative solution:
 
 ```
 public String writeBackwards(String text){
