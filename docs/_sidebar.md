@@ -1,6 +1,5 @@
 <!-- docs/_sidebar.md -->
 
-- [Home](README.md)
 - [Recursion](recursion.md)
 - [Data Abstraction](data-abstraction.md)
 - [Linked Lists](linked-lists.md)

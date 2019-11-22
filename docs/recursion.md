@@ -1,20 +1,5 @@
 # Recursion
 
-### Table of Contents
-
-1. [Recursion](recursion.md)
-2. [Data Abstraction](data-abstraction.md)
-3. [Linked Lists](linked-lists.md)
-4. [Problem Solving with Recursion](problem-solving-with-recursion.md)
-5. [Stacks](stacks.md)
-6. [Queues](queues.md)
-7. [Algorithm Efficiency & Complexity](algorithm-efficiency-complexity.md)
-8. [Sorting](sorting.md)
-9. [Trees](trees.md)
-10. [Tables & Priority Queues](tables-priority-queues.md)
-11. [Advanced Tables & Hashing](advanced-tables-hashing.md)
-12. [Graphs](graphs.md)
-
 ---
 
 ## Construction of recursive solutions:
@@ -36,10 +21,44 @@ factorial(n) = n * (n - 1) * (n - 2) * ... * 1
 
 factorial(0) = 1
 ```
-Recurence relation:
+# Iterative solution:
+```
+public int factorial(int x){
+    int result = 1;
+    for (int i = 2; i <= x; i++>) result *= i;
+    return result;
+}
+```
+Recurrence relation:
 
 ```
 factorial(n) = n * factorial(n - 1)
+
+```
+# Recursive solution
+```
+public int factorial(int x){
+    if (x == 0) return 1; // base case
+    return x * factorial(x -1);
+}
+```
+
+## Writing a string backwards
+
+Problem: Write a string of characters in reverse order
+
+# Iterative solution:
+
+```
+public String stringReverse(String text){
+    int length = text.length();
+    StringBuffer reverseString = new StringBuffer();
+    for (int i = length - 1; i >= 0; i --) reverseString.append(text.charAt(i));
+    return reverseString;
+}
+```
+
+
 
 
 
